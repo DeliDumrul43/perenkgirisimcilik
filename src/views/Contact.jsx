@@ -10,11 +10,10 @@ gsap.registerPlugin(ScrollTrigger);
 function Contact({ id }) {
   const sectionRef = useRef(null);
 
-  // We are now animating ONLY the container, not the individual elements
   useGSAP(() => {
     gsap.from(".contact-content-container", {
       scrollTrigger: {
-        trigger: sectionRef.current,
+        trigger: sectionRef.current, // Animation trigger remains the same
         start: "top 80%",
         toggleActions: "play none none none",
       },
@@ -26,10 +25,10 @@ function Contact({ id }) {
   }, { scope: sectionRef });
 
   return (
-    <section id={id} ref={sectionRef} className="w-full bg-brand-dark-turquoise min-h-screen flex items-center py-20 px-4">
+    // --- CHANGE 1: The id={id} is REMOVED from the section tag ---
+    <section ref={sectionRef} className="w-full bg-brand-dark-turquoise min-h-screen flex items-center py-20 px-4">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-        {/* 1. Image Column (we remove contact-reveal from here too for simplicity) */}
         <div className="hidden md:block">
           <img 
             src={petImage} 
@@ -38,10 +37,11 @@ function Contact({ id }) {
           />
         </div>
 
-        {/* 2. Text and Links Column */}
-        {/* --- THIS IS THE NEW CONTAINER YOU SUGGESTED --- */}
-        <div className="contact-content-container text-center md:text-left bg-black/10 p-8 rounded-2xl border border-white/10">
-          
+        {/* --- CHANGE 2: The id={id} is ADDED to this container --- */}
+        <div 
+          id={id} 
+          className="contact-content-container text-center md:text-left bg-black/10 p-8 rounded-2xl border border-white/10"
+        >
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-brand-beige mb-4">
             Bize Ulaşın
           </h2>
@@ -50,7 +50,7 @@ function Contact({ id }) {
           </p>
           
           <div className="space-y-4">
-            {/* Instagram Link Card */}
+            {/* ... Your contact cards remain the same ... */}
             <a
               href="https://www.instagram.com/perenkpetshop"
               target="_blank"
@@ -63,8 +63,6 @@ function Contact({ id }) {
                 <p className="font-sans text-brand-beige/70 group-hover:text-brand-dark-turquoise/80 transition-colors">@perenkpetshop</p>
               </div>
             </a>
-
-            {/* Phone Link Card */}
             <a
               href="tel:+905551234567"
               className="group flex items-center gap-4 p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 shadow-lg hover:bg-brand-beige hover:scale-105 transition-all duration-300"
