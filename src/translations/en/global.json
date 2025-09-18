@@ -1,0 +1,14 @@
+{
+    "leading": {
+        "about": "About",
+        "sponsors": "Sponsors",
+        "pictures": "Pictures"
+    },
+    "about": {
+        "about": "About",
+        "name": "Name",
+        "date": "Birth Date",
+        "achievement": "Achievement",
+        "bike": "Bike"
+      }
+}
