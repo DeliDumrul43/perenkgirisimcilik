@@ -13,7 +13,7 @@ function Contact({ id }) {
   useGSAP(() => {
     gsap.from(".contact-content-container", {
       scrollTrigger: {
-        trigger: sectionRef.current, // Animation trigger remains the same
+        trigger: sectionRef.current,
         start: "top 80%",
         toggleActions: "play none none none",
       },
@@ -25,8 +25,12 @@ function Contact({ id }) {
   }, { scope: sectionRef });
 
   return (
-    // --- CHANGE 1: The id={id} is REMOVED from the section tag ---
-    <section ref={sectionRef} className="w-full bg-brand-dark-turquoise min-h-screen flex items-center py-20 px-4">
+    // --- CHANGE 1: Move id={id} back here and add scroll-mt-28 ---
+    <section 
+      id={id} 
+      ref={sectionRef} 
+      className="w-full bg-brand-dark-turquoise min-h-screen flex items-center py-20 px-4 scroll-mt-28"
+    >
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
         <div className="hidden md:block">
@@ -37,11 +41,9 @@ function Contact({ id }) {
           />
         </div>
 
-        {/* --- CHANGE 2: The id={id} is ADDED to this container --- */}
-        <div 
-          id={id} 
-          className="contact-content-container text-center md:text-left bg-black/10 p-8 rounded-2xl border border-white/10"
-        >
+        {/* --- CHANGE 2: The id is REMOVED from this container --- */}
+        <div className="contact-content-container text-center md:text-left bg-black/10 p-8 rounded-2xl border border-white/10">
+          
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-brand-beige mb-4">
             Bize Ulaşın
           </h2>
@@ -50,7 +52,7 @@ function Contact({ id }) {
           </p>
           
           <div className="space-y-4">
-            {/* ... Your contact cards remain the same ... */}
+            {/* ...Your card styling is perfect and remains the same... */}
             <a
               href="https://www.instagram.com/perenkpetshop"
               target="_blank"
