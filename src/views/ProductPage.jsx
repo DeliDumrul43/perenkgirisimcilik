@@ -76,12 +76,19 @@ function ProductPage({ id }) {
           </div>
 
           {/* --- Product Grid --- */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {sortedProducts.map(product => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-
+          {sortedProducts.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+              {sortedProducts.map(product => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-20">
+              <p className="font-sans text-xl text-gray-500">Şu anda stokta hiç ürün bulunmamaktadır.</p>
+              <p className="font-sans text-gray-500 mt-2">Lütfen daha sonra tekrar kontrol edin!</p>
+            </div>
+          )}
+          
         </div>
       </section>
     </>

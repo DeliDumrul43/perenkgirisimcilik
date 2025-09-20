@@ -1,7 +1,7 @@
 import React from "react";
 
 function ProductCard({ product }) {
-  // Format the price to show two decimal places
+  console.log("Rendering Card:", product.name, "URL:", product.dropShipUrl);
   const formattedPrice = `₺${product.price.toFixed(2)}`;
 
   return (

@@ -53,7 +53,7 @@ function About({ id }) {
 
           {/* --- LEFT COLUMN: STORY & TEXT --- */}
           <div className="text-left">
-            <p className="about-text-reveal font-sans text-lg font-bold text-brand-light-turquoise mb-2">
+            <p className="about-text-reveal font-sans text-lg font-bold text-brand-dark-turquoise mb-3">
               {t("about.title", "Biz Kimiz?")}
             </p>
             <h2 className="about-text-reveal font-serif text-4xl md:text-5xl font-bold text-brand-dark-turquoise mb-6">

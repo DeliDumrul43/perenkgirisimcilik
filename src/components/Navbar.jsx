@@ -64,7 +64,7 @@ function Navbar({ onLinkSetActive }) {
           <Link to="products" spy={true} smooth={true} offset={-70} duration={500} className={linkStyles} onSetActive={() => onLinkSetActive('products')}>
             {t("Ürünlerimiz")}
           </Link>
-          <Link to="contact" spy={true} smooth={true} offset={-70} duration={500} className={linkStyles} onSetActive={() => onLinkSetActive('contact')}>
+          <Link to="contact" spy={true} smooth={true} offset={50} duration={500} className={linkStyles} onSetActive={() => onLinkSetActive('contact')}>
             {t("İletişim")}
           </Link>
         </div>

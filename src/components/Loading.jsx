@@ -46,7 +46,6 @@ function Loading() {
             style={{ animationDelay: '0s' }}
           />
           
-          {/* The Paw Print Paths (inside the heart) */}
           {/* Main Pad */}
           <path
             className="draw-path"
