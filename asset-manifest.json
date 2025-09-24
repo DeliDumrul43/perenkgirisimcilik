@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/perenkgirisimcilik/static/css/main.67d57ff0.css",
-    "main.js": "/perenkgirisimcilik/static/js/main.8072d680.js",
+    "main.css": "/perenkgirisimcilik/static/css/main.af51ae27.css",
+    "main.js": "/perenkgirisimcilik/static/js/main.743cce83.js",
     "static/js/453.1da0c200.chunk.js": "/perenkgirisimcilik/static/js/453.1da0c200.chunk.js",
     "static/media/pet_image.png": "/perenkgirisimcilik/static/media/pet_image.14d77c676a482ee24fa1.png",
     "static/media/FiraSansCondensed-Regular.ttf": "/perenkgirisimcilik/static/media/FiraSansCondensed-Regular.514b8df8cb3689410cef.ttf",
@@ -9,12 +9,12 @@
     "static/media/PermanentMarker-Regular.ttf": "/perenkgirisimcilik/static/media/PermanentMarker-Regular.109a10dca0508e41aa12.ttf",
     "static/media/logo.png": "/perenkgirisimcilik/static/media/logo.3ca66ad4ea715eefc5ab.png",
     "index.html": "/perenkgirisimcilik/index.html",
-    "main.67d57ff0.css.map": "/perenkgirisimcilik/static/css/main.67d57ff0.css.map",
-    "main.8072d680.js.map": "/perenkgirisimcilik/static/js/main.8072d680.js.map",
+    "main.af51ae27.css.map": "/perenkgirisimcilik/static/css/main.af51ae27.css.map",
+    "main.743cce83.js.map": "/perenkgirisimcilik/static/js/main.743cce83.js.map",
     "453.1da0c200.chunk.js.map": "/perenkgirisimcilik/static/js/453.1da0c200.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67d57ff0.css",
-    "static/js/main.8072d680.js"
+    "static/css/main.af51ae27.css",
+    "static/js/main.743cce83.js"
   ]
 }
