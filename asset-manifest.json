@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/perenkgirisim/static/css/main.2bcb5e8e.css",
+    "main.js": "/perenkgirisim/static/js/main.04fe6026.js",
+    "static/js/453.1da0c200.chunk.js": "/perenkgirisim/static/js/453.1da0c200.chunk.js",
+    "static/media/pet_image.png": "/perenkgirisim/static/media/pet_image.14d77c676a482ee24fa1.png",
+    "static/media/FiraSansCondensed-Regular.ttf": "/perenkgirisim/static/media/FiraSansCondensed-Regular.514b8df8cb3689410cef.ttf",
+    "static/media/leading_img.png": "/perenkgirisim/static/media/leading_img.19ee912b316c131d8eca.png",
+    "static/media/PermanentMarker-Regular.ttf": "/perenkgirisim/static/media/PermanentMarker-Regular.109a10dca0508e41aa12.ttf",
+    "static/media/logo.png": "/perenkgirisim/static/media/logo.3ca66ad4ea715eefc5ab.png",
+    "index.html": "/perenkgirisim/index.html",
+    "main.2bcb5e8e.css.map": "/perenkgirisim/static/css/main.2bcb5e8e.css.map",
+    "main.04fe6026.js.map": "/perenkgirisim/static/js/main.04fe6026.js.map",
+    "453.1da0c200.chunk.js.map": "/perenkgirisim/static/js/453.1da0c200.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bcb5e8e.css",
+    "static/js/main.04fe6026.js"
+  ]
+}
