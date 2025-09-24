@@ -1,0 +1,7 @@
+npm run build komutuyla projeni derle.
+
+Oluşan dist klasörünün içine .htaccess dosyasını ekle.
+
+dist klasörünün içindeki her şeyi FTP ile public_html klasörüne yükle.
+
+Firebase'de alan adını yetkilendir.

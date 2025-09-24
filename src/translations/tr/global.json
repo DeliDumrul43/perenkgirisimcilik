@@ -1,0 +1,14 @@
+{
+  "leading": {
+    "about": "Hakkımda",
+    "sponsors": "Sponsorlar",
+    "pictures": "Fotoğraflar"
+  },
+  "about": {
+    "about": "Hakkımda",
+    "name": "Adım",
+    "date": "Doğum Tarihim",
+    "achievement": "Başarılarım",
+    "bike": "Motorum"
+  }
+}
