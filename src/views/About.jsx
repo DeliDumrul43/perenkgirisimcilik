@@ -47,7 +47,7 @@ function About({ id }) {
       <section 
         id={id}
         ref={sectionRef}
-        className="w-full min-h-screen paw-background py-20 px-4 flex items-center" 
+        className="w-full min-h-screen relative paw-background py-20 px-4 flex items-center" 
       >
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -90,6 +90,10 @@ function About({ id }) {
             />
           </div>
         </div>
+        <div 
+        className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-brand-beige to-transparent"
+        aria-hidden="true" 
+      />
       </section>
     </>
   );

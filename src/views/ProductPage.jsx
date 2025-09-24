@@ -82,8 +82,8 @@ function ProductPage({ id }) {
   if (error) return <div className="h-screen flex items-center justify-center bg-brand-beige">{error}</div>;
 
   return (
-    <section id={id} className="w-full min-h-screen bg-brand-beige py-24 px-4 paw-background">
-      <div className="max-w-7xl mx-auto">
+    <section id={id} className="w-full min-h-screen relative bg-brand-beige py-24 px-4 paw-background">
+      <div className="max-w-7xl mx-auto relative z-10">
         <h2 className="font-serif text-4xl md:text-5xl font-bold text-brand-dark-turquoise mb-8 text-center">
           Ürünlerimiz
         </h2>
@@ -157,6 +157,10 @@ function ProductPage({ id }) {
           </div>
         )}
       </div>
+      <div 
+          className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-brand-dark-turquoise to-transparent"
+          aria-hidden="true" 
+        />
     </section>
   );
 }
