@@ -25,7 +25,6 @@ function Contact({ id }) {
   }, { scope: sectionRef });
 
   return (
-    // --- CHANGE 1: Move id={id} back here and add scroll-mt-28 ---
     <section 
       id={id} 
       ref={sectionRef} 
@@ -33,7 +32,7 @@ function Contact({ id }) {
     >
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-        <div className="hidden md:block">
+        <div className="md:block">
           <img 
             src={petImage} 
             alt="Happy pet" 
@@ -41,7 +40,6 @@ function Contact({ id }) {
           />
         </div>
 
-        {/* --- CHANGE 2: The id is REMOVED from this container --- */}
         <div className="contact-content-container text-center md:text-left bg-black/10 p-8 rounded-2xl border border-white/10">
           
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-brand-beige mb-4">
@@ -52,7 +50,6 @@ function Contact({ id }) {
           </p>
           
           <div className="space-y-4">
-            {/* ...Your card styling is perfect and remains the same... */}
             <a
               href="https://www.instagram.com/perenkpetshop"
               target="_blank"

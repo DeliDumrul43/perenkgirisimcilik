@@ -12,6 +12,13 @@
   display: none;
 }
 
+body, #root {
+  transform: none !important;
+  filter: none !important;
+  perspective: none !important;
+  overflow-x: hidden; /* Also prevents horizontal scroll issues */
+}
+
 body {
   background-color:  #f0e6d5;
   overflow: auto;
@@ -25,5 +32,15 @@ body {
   background-position: 0 0;
   background-size: 150px 150px; /* Controls the size and spacing */
   background-repeat: repeat;
+}
+
+/* Navbar fix for mobile screens */
+@media (max-width: 640px) {
+  .mobile-nav-adjust {
+    padding-left: 0.5rem;  /* 8px */
+    padding-right: 0.5rem; /* 8px */
+    gap: 0.5rem;           /* 8px */
+    max-width: 95%;      /* Ensure it doesn't touch the screen edges */
+  }
 }
 

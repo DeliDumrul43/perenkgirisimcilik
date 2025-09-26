@@ -8,7 +8,7 @@ import ProductPage from './ProductPage';
 import Footer from './Footer';
 import Contact from './Contact';
 import Navbar from '../components/Navbar';
-import ParticleBackground from '../components/ParticleBackground';
+import Stories from '../components/Stories';
 
 const pageInfoData = {
   home: {
@@ -18,6 +18,10 @@ const pageInfoData = {
   about: {
     title: "Hakkımızda - Perenk Petshop",
     description: "Perenk Petshop'un hikayesini, misyonumuzu ve hayvan sevgisi dolu değerlerimizi keşfedin."
+  },
+  stories: {
+    title: "Sevimli Dostlarımızın Hikayeleri - Perenk Petshop",
+    description: "Müşterilerimizin ve mağazamızın sevimli sakinlerinin en son maceralarını ve mutlu anlarını keşfedin."
   },
   products: {
     title: "Ürünlerimiz - Perenk Petshop",
@@ -49,6 +53,7 @@ function Home() {
       
       <Leading id="home" />
       <About id="about" />
+      <Stories id="stories" />
       <ProductPage id="products" />
       <Contact id="contact" />
       <Footer />
