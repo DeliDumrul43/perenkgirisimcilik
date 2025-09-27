@@ -3,32 +3,32 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import global_en from "./translations/en/global.json";
-import global_tr from "./translations/tr/global.json";
+// import global_en from "./translations/en/global.json";
+// import global_tr from "./translations/tr/global.json";
 import { HelmetProvider } from 'react-helmet-async';
-import i18next from "i18next";
-import { I18nextProvider } from "react-i18next";
+// import i18next from "i18next";
+// import { I18nextProvider } from "react-i18next";
 
-i18next.init({
-  interpolation: { escapeValue: false },
-  lng: "en",
-  resources: {
-    en: {
-      global: global_en,
-    },
-    tr: {
-      global: global_tr,
-    },
-  },
-});
+// i18next.init({
+//   interpolation: { escapeValue: false },
+//   lng: "en",
+//   resources: {
+//     en: {
+//       global: global_en,
+//     },
+//     tr: {
+//       global: global_tr,
+//     },
+//   },
+// });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-  <HelmetProvider>
-      <I18nextProvider i18n={i18next}>
+    <HelmetProvider>
+      {/* <I18nextProvider i18n={i18next}> */}
         <App />
-      </I18nextProvider>
+      {/* </I18nextProvider> */}
     </HelmetProvider>
   </React.StrictMode>
 );
