@@ -28,28 +28,34 @@ function Navbar({ onLinkSetActive }) {
     <nav className="fixed top-0 w-full z-50 flex justify-center pt-4">
 
       {/* --- The Floating Pill --- */}
-      {/* The `w-auto` was changed to be responsive */}
       <div className="flex items-center justify-between w-11/12 md:w-auto py-2 px-4 bg-brand-dark-turquoise/80 backdrop-blur-xl shadow-lg rounded-full border border-white/10">
         
         {/* Logo */}
         <div className="flex-shrink-0">
-          <Link to="home" spy={true} smooth={true} duration={500} onSetActive={() => onLinkSetActive('home')} className="flex items-center cursor-pointer">
-            <div className="bg-brand-beige rounded-full p-1 shadow-sm flex items-center justify-center">
-              <img src={logoF} alt="Perenk Petshop Logo" className="h-12 w-auto" />
-            </div>
-          </Link>
-        </div>
+                    <Link
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        onSetActive={() => onLinkSetActive('home')}
+                        className="flex items-center cursor-pointer"
+                    >
+                        <div className="bg-brand-beige rounded-full p-1 shadow-sm flex items-center justify-center">
+                            <img src={logoF} alt="Perenk Petshop Logo" className="h-12 w-auto" />
+                        </div>
+                    </Link>
+          </div>
 
         {/* Desktop Links (Hidden on mobile) */}
         <div className="hidden md:flex items-center gap-8 px-4">
           <Link to="about" spy={true} smooth={true} offset={-70} duration={500} className={linkStyles} onSetActive={() => onLinkSetActive('about')}>
             {t("Hakkımızda")}
           </Link>
-          <Link to="products" spy={true} smooth={true} offset={-70} duration={500} className={linkStyles} onSetActive={() => onLinkSetActive('products')}>
-            {t("Ürünlerimiz")}
-          </Link>
           <Link to="stories" spy={true} smooth={true} offset={-70} duration={500} className={linkStyles} onSetActive={() => onLinkSetActive('stories')}>
             {t("Hikayeler")}
+          </Link>
+          <Link to="products" spy={true} smooth={true} offset={-70} duration={500} className={linkStyles} onSetActive={() => onLinkSetActive('products')}>
+            {t("Ürünlerimiz")}
           </Link>
           <Link to="contact" spy={true} smooth={true} offset={-70} duration={500} className={linkStyles} onSetActive={() => onLinkSetActive('contact')}>
             {t("İletişim")}

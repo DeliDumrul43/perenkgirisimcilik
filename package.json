@@ -1,7 +1,6 @@
 {
   "name": "perenkgirisimci",
   "version": "0.1.0",
-  "homepage": "https://DeliDumrul43.github.io/perenkgirisimcilik",
   "private": true,
   "dependencies": {
     "@gsap/react": "^2.1.0",

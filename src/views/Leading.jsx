@@ -6,7 +6,7 @@ import petshopLogo from "../assets/images/leading_img.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Leading() {
+function Leading({ id }) {
   const container = useRef(null);
 
   useGSAP(() => {
@@ -34,7 +34,7 @@ function Leading() {
         x: 200, 
         opacity: 0,
         duration: 1.5,
-      }, "<") // "<" starts this animation at the same time as the previous one
+      }, "<")
       // Then animate the central content
       .from("#hero-logo", {
         opacity: 0,
@@ -89,9 +89,10 @@ function Leading() {
   return (
     <>
       <div
-        ref={container}
-        className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-brand-beige p-4"
-      >
+      id={id} 
+      ref={container}
+      className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-brand-beige p-4"
+     >
 
       <div
         id="bird-illustration"

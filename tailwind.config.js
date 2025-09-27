@@ -12,9 +12,9 @@ module.exports = {
         'brand-dark-turquoise': '#275c57',
     },
     fontFamily: {
-        'serif': ['"Libre Baskerville"', 'serif'], // For headings
-        'sans': ['"Lato"', 'sans-serif'], 
-  },
+        'serif': ['"Libre Baskerville"', 'serif'],
+        'sans': ['"Montserrat"', 'sans-serif'], // Changed Lato to Montserrat
+    },
   plugins: [],
   }
 }

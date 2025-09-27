@@ -12,23 +12,23 @@ import Stories from '../components/Stories';
 
 const pageInfoData = {
   home: {
-    title: "Perenk Petshop - Ankara'un Kaliteli Evcil Hayvan Ürünleri",
+    title: "Perenk Girişimcilik - Ankara'un Kaliteli Evcil Hayvan Ürünleri",
     description: "Perenk Petshop, evcil hayvanlarınız için en kaliteli mama, oyuncak ve aksesuarları sunar."
   },
   about: {
-    title: "Hakkımızda - Perenk Petshop",
+    title: "Hakkımızda - Perenk Girişimcilik",
     description: "Perenk Petshop'un hikayesini, misyonumuzu ve hayvan sevgisi dolu değerlerimizi keşfedin."
   },
   stories: {
-    title: "Sevimli Dostlarımızın Hikayeleri - Perenk Petshop",
+    title: "Sevimli Dostlarımızın Hikayeleri - Perenk Girişimcilik",
     description: "Müşterilerimizin ve mağazamızın sevimli sakinlerinin en son maceralarını ve mutlu anlarını keşfedin."
   },
   products: {
-    title: "Ürünlerimiz - Perenk Petshop",
+    title: "Ürünlerimiz - Perenk Girişimcilik",
     description: "Perenk Petshop'un evcil hayvanlarınız için özenle seçilmiş, kaliteli ve sağlıklı ürünlerini keşfedin."
   },
   contact: {
-    title: "İletişim - Perenk Petshop",
+    title: "İletişim - Perenk Girişimcilik",
     description: "Bize ulaşın. Sorularınız ve siparişleriniz için telefon ve Instagram adresimiz."
   }
 };

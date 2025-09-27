@@ -51,7 +51,7 @@ function Contact({ id }) {
           
           <div className="space-y-4">
             <a
-              href="https://www.instagram.com/perenkpetshop"
+              href="https://www.instagram.com/perenkgirisimcilik?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-4 p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 shadow-lg hover:bg-brand-beige hover:scale-105 transition-all duration-300"
@@ -63,13 +63,13 @@ function Contact({ id }) {
               </div>
             </a>
             <a
-              href="tel:+905551234567"
+              href="tel:+905442256679"
               className="group flex items-center gap-4 p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/20 shadow-lg hover:bg-brand-beige hover:scale-105 transition-all duration-300"
             >
               <FaPhoneAlt size={24} className="text-brand-beige group-hover:text-brand-dark-turquoise transition-colors" />
               <div>
                 <h3 className="font-sans font-bold text-lg text-brand-beige group-hover:text-brand-dark-turquoise transition-colors">Telefon</h3>
-                <p className="font-sans text-brand-beige/70 group-hover:text-brand-dark-turquoise/80 transition-colors">+90 555 123 45 67</p>
+                <p className="font-sans text-brand-beige/70 group-hover:text-brand-dark-turquoise/80 transition-colors">+90 544 225 6679</p>
               </div>
             </a>
           </div>
